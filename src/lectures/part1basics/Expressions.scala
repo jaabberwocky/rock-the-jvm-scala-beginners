@@ -36,5 +36,18 @@ object Expressions extends App {
   }
   println(aCodeBlock)
 
+  // 1. difference between "hello world" and println("hello world")?
+  // first one is value of type String, println is an expression with a side effect, returning a Unit
+
+  // 2. what is the value of the below
+  val someValue = {
+    2 < 3
+  }
+
+  val someOtherValue = {
+    if(someValue) 239 else 986
+    42
+  }
+  println(someOtherValue)
   
 }
